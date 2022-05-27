@@ -1,0 +1,9 @@
+The Magic Base-Ball will be similar to an 8-ball, but it will try to roughly detect what topic the user is trying to ask about, and will answer accordingly.
+These answers will be less relaxed than an 8-ball, sometimes being insulty.
+
+What I'm thinking is that the user could potentially have an option to tell the program what kind of topic their question is, this way it can give the user more targeted answers.
+
+Another idea is to make it so the answer isn't 100% random. Rather, the program decides what kind of answer it should give to a question, in some way that isn't random. Then, the message is randomly picked. This way, if the Base-Ball says there's not a chance, it sticks to that, making it seem more magical.
+On random occasion it could decide to spit out an answer like "Concentrate more", which could lead to funny situations where someone keeps asking the same question, then it tells them to "concentrate harder", before spitting out the same answer again.
+
+Also, instead of shaking the ball, you "Hit it", which could have a random chance of playing music or something
