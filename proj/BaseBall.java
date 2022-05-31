@@ -51,6 +51,14 @@ public class BaseBall {
         int val = rand.nextInt(lengt);
         String tex = arr[val];
         return tex;
+		
+		//Psudo Code
+		/*
+		set lengt to the length of the array in arr
+		set val to a random number between 0 and the value of lengt
+		set tex to the string stored in the position of val, in the array in arr
+		return tex
+		*/
     }
 
 //This function is what should be called when the BaseBall is used by itself. It gets the question from the user, then outputs the answer.
@@ -87,8 +95,15 @@ public class BaseBall {
         String MyFinalAnswer = FinalAnswer(Tree);
         return MyFinalAnswer;
 
-        //Due to this just being a lot of function calls, I'll skip on the psudo code.
-        //The main thing that's important here however, is that it takes the hash of the user input, and feeds it to digital_root()
+        //Here's the Psudo code
+		/*
+		capitalize everything in ans
+		set hashQ to the hash of ans
+		set DRoot to the output of digital_root() with the variable hashQ as the argument
+		set Tree to the output of getMe3() with the variable DRoot as the argument
+		set MyFinalAnswer to the output of FinalAnswer() with the variable Tree as the argument
+		return MyFinalAnswer
+		*/
     }
     
 
@@ -132,11 +147,21 @@ public class BaseBall {
         //Psudo code version
         /*
         if num is less than or equal to 0, add 1 to it and toss it back.
+		
+		while num is greater than 3,
+			devide num by 2
+		if num is now somehow less than or equal to 0, add 1 to it and return it
+		if not, just return num
         */
     }
 
+
+//This function takes a 1, 2, or 3, and returns an answer based on it.
+//3 gives you a "perhaps". This is because the only way to get it is to either have gotten a 3, or a 6 for the digital root
+//2 gives you a "no". This is because it's the most common, and the program is supposed to have an attitude
+//1 gives you a "yes". This is because it's the rarest, since the digital root HAS to have been 1, or a 0 (somehow)
     public String FinalAnswer( int num ) {
-            if (num>3) return "Run getMe3, fucking idiot";
+            if (num>3) return "Greater Than 3";
             if (num<=0) return "Less Than 0";
 
             String ans = "";
@@ -153,6 +178,24 @@ public class BaseBall {
                     ans = get_str(yups);
                     return ans;
             }
+		//Psudo code version
+		/*
+		if num is greather than 3, return "Greater Than 3"
+		if num is less than, or equal to 0, return "Less than 0"
+		
+		Make a new string variable.
+		
+		if num is 3,
+			ans equals a random string from the "perhaps" array
+			return ans
+		else if it's 2,
+			ans equals a random string from the "no" array
+			return ans
+		else
+			ans equals a random string from the "yups" array
+			return ans
+		*/
+		// The first 2 lines are error reporting, alerting you if a value is out of the expected range
     }
 
 }
