@@ -142,7 +142,7 @@ public class BaseBall {
             while(num>3) {
                     num = num/2;
             }
-            if (num <= 0) return num+1;
+            if (num <= 0) num += 1;
             return num;
         //Psudo code version
         /*
@@ -150,7 +150,7 @@ public class BaseBall {
 		
 		while num is greater than 3,
 			devide num by 2
-		if num is now somehow less than or equal to 0, add 1 to it and return it
+		if num is now somehow less than or equal to 0, add 1 to it
 		if not, just return num
         */
     }
@@ -161,8 +161,8 @@ public class BaseBall {
 //2 gives you a "no". This is because it's the most common, and the program is supposed to have an attitude
 //1 gives you a "yes". This is because it's the rarest, since the digital root HAS to have been 1, or a 0 (somehow)
     public String FinalAnswer( int num ) {
-            if (num>3) return "Greater Than 3";
-            if (num<=0) return "Less Than 0";
+            if (num>3) num=3; //return "Greater Than 3";
+            if (num<=0) num=1; //return "Less Than 0";
 
             String ans = "";
 
